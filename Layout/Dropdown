@@ -1,1 +1,122 @@
-//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SafeSpace-PH Dropdown</title>
+<style>
+  /* Container */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* Dropdown button */
+  .dropdown-button {
+    background-color: #7c3aed; /* Vibrant purple */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+    border-radius: 12px;
+    user-select: none;
+    box-shadow: 0 4px 10px rgba(124, 58, 237, 0.4);
+    transition: background-color 0.3s ease;
+  }
+
+  .dropdown-button:hover {
+    background-color: #6d28d9; /* Darker purple on hover */
+  }
+
+  /* Arrow icon */
+  .arrow {
+    margin-left: 10px;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+  }
+
+  /* Dropdown menu */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 220px;
+    background-color: #f5f3ff; /* Very light purple background */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(124, 58, 237, 0.2);
+    z-index: 1000;
+  }
+
+  /* Menu items */
+  .dropdown-menu a {
+    display: block;
+    padding: 14px 20px;
+    color: #5b21b6; /* Dark purple text */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: background-color 0.2s ease;
+    border-radius: 12px;
+  }
+
+  /* Hover effect on menu items */
+  .dropdown-menu a:hover {
+    background-color: #ddd6fe; /* Light purple highlight */
+  }
+
+  /* Show menu when open */
+  .dropdown.open .dropdown-menu {
+    display: block;
+  }
+
+  /* Rotate arrow when open */
+  .dropdown.open .arrow {
+    transform: rotate(180deg);
+  }
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+  <button class="dropdown-button" aria-haspopup="true" aria-expanded="false">
+    Resources
+    <span class="arrow">▼</span>
+  </button>
+  <div class="dropdown-menu" role="menu" aria-hidden="true">
+    <a href="#" role="menuitem">Blog</a>
+    <a href="#" role="menuitem">Case Studies</a>
+    <a href="#" role="menuitem">Press</a>
+  </div>
+</div>
+
+<script>
+  const dropdown = document.querySelector('.dropdown');
+  const button = dropdown.querySelector('.dropdown-button');
+  const menu = dropdown.querySelector('.dropdown-menu');
+
+  button.addEventListener('click', () => {
+    const isOpen = dropdown.classList.contains('open');
+    dropdown.classList.toggle('open', !isOpen);
+    button.setAttribute('aria-expanded', String(!isOpen));
+    menu.setAttribute('aria-hidden', String(isOpen));
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove('open');
+      button.setAttribute('aria-expanded', 'false');
+      menu.setAttribute('aria-hidden', 'true');
+    }
+  });
+</script>
+
+</body>
+</html>
