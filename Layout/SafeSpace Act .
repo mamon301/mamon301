@@ -1,1 +1,63 @@
-//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Safe Space Act Section</title>
+  <style>
+    .safe-space-section {
+      background-color: #f9f9f9;
+      padding: 60px 20px;
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .safe-space-section .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .safe-space-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #6a1b9a; /* Purple heading */
+    }
+
+    .safe-space-section p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .learn-more-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #9c27b0; /* Purple button */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .learn-more-btn:hover {
+      background-color: #7b1fa2; /* Darker purple on hover */
+    }
+  </style>
+</head>
+<body>
+
+  <section class="safe-space-section">
+    <div class="container">
+      <h2>What is the Safe Spaces Act?</h2>
+      <p>
+        The Safe Spaces Act (Republic Act No. 11313) is a Philippine law that defines and penalizes gender-based sexual harassment in streets, public spaces, online, workplaces, and educational or training institutions. It aims to ensure the safety and dignity of every individual by addressing and preventing such acts.
+      </p>
+      <a href="https://lawphil.net/statutes/repacts/ra2019/ra_11313_2019.html" class="learn-more-btn" target="_blank" rel="noopener noreferrer">
+        Learn More
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>
