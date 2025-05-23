@@ -8,7 +8,7 @@
     .safe-space-section {
       background-color: #f9f9f9;
       padding: 60px 20px;
-      text-align: center;
+      text-align: left; /* Text aligned to the left */
       font-family: 'Arial', sans-serif;
     }
 
@@ -49,9 +49,9 @@
 
   <section class="safe-space-section">
     <div class="container">
-      <h2>What is the Safe Spaces Act?</h2>
+      <h2>Safe Spaces Act (Republic Act No. 11313)</h2>
       <p>
-        The Safe Spaces Act (Republic Act No. 11313) is a Philippine law that defines and penalizes gender-based sexual harassment in streets, public spaces, online, workplaces, and educational or training institutions. It aims to ensure the safety and dignity of every individual by addressing and preventing such acts.
+        The Safe Spaces Act protects everyone from gender-based harassment in public, work, school, and online. Learn how the law defends your dignity and what actions you can take.
       </p>
       <a href="https://lawphil.net/statutes/repacts/ra2019/ra_11313_2019.html" class="learn-more-btn" target="_blank" rel="noopener noreferrer">
         Learn More
