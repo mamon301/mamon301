@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Safe Space Act</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <h1 class="logo">Safe Space PH</h1>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Laws</a>
+        <a href="#">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to Safe Space PH</h2>
+      <p>Empowering every Filipino by creating safer spaces and promoting awareness on the Safe Space Act (RA 11313).</p>
+    </div>
+  </section>
+
+  <!-- Info Cards -->
+  <section class="cards">
+    <div class="container card-grid">
+      <div class="card">
+        <h3>What is RA 11313?</h3>
+        <p>Also known as the Safe Spaces Act, this law penalizes all forms of gender-based sexual harassment in public spaces.</p>
+      </div>
+      <div class="card">
+        <h3>Know Your Rights</h3>
+        <p>Learn how you’re protected under this act and what actions you can take when harassed or discriminated against.</p>
+      </div>
+      <div class="card">
+        <h3>How to Report</h3>
+        <p>Familiarize yourself with the steps to report incidents and the agencies that can help you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Safe Space PH. All rights reserved.</p>
+  </footer>
+</body>
+</html>
